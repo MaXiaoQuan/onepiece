@@ -1,0 +1,7 @@
+hibernate查询方法：
+1.根据OID查询，直接用Session的get()和load()方法查出对象；
+2.根据Session的createQuery()方法查询（HQL查询）：
+	①.用sql语句，前面不加select关键字，返回List<User>，每个User包含所有字段，用Query的setParameter()方法绑定动态参数；
+	②.分页查询，用Query的setFirstResult()和setMaxResult()方法进行分页查询；
+	③.查询其中一部分字段，用select关键字，查询出来的结果是List<Object []>，每条数据都是一个数组，每个数组里面放着需要查询的字段。
+	④.查询其中一部分字段，但是以实体类的形式返回数据，查询语句："select new User(u.userId, u.userName, u.realName) from User u where ..."

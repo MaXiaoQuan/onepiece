@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+a{
+	font-size: 13px;
+	color: white;
+	border-radius: 8px;
+	padding: 4px;
+	background-color: #008080;
+	text-decoration: none;
+	}
+html, body{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	/* background-color: #7B68EE; */
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#66CCFF), to(rgba(123, 104, 238, 0.3)));
+}

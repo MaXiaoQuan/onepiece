@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping">
+<!-- Generated 2017-9-12 12:43:58 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="priv.mq.onePiece.entities.Figure" table="FIGURE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE" />
+        </property>
+        <!-- 字段不能设置成CHARACTER这种MySQL关键字，否则无法执行sql语句 -->
+        <property name="characteristic" type="java.lang.String">
+            <column name="CHARACTERISTIC" />
+        </property>
+        <property name="hobby" type="java.lang.String">
+            <column name="HOBBY" />
+        </property>
+        <property name="useWeapon" type="java.lang.Boolean">
+            <column name="USEWEAPON" />
+        </property>
+        <property name="weapon" type="java.lang.String">
+            <column name="WEAPON" />
+        </property>
+        <property name="photoPath" type="java.lang.String">
+            <column name="PHOTOPATH" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>
