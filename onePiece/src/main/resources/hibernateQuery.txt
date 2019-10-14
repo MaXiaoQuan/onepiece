@@ -5,8 +5,3 @@ hibernate查询方法：
 	②.分页查询，用Query的setFirstResult()和setMaxResult()方法进行分页查询；
 	③.查询其中一部分字段，用select关键字，查询出来的结果是List<Object []>，每条数据都是一个数组，每个数组里面放着需要查询的字段。
 	④.查询其中一部分字段，但是以实体类的形式返回数据，查询语句："select new User(u.userId, u.userName, u.realName) from User u where ..."
-
-
-master
-
-merge
